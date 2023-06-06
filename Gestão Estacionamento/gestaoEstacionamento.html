@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estacionamento Minuteman</title> 
+</head>
+<link rel="stylesheet" href="gestaoEstacionamento.css">
+<script src="gestaoEstacionamento.js"></script>
+<body>
+    <h1>Estacionamento Minuteman</h1>
+    <h2>Registro de Entrada</h2>
+    <form id="entradaForm">
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" id="placa" name="placa"><br>
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" id="modelo" name="modelo"><br>
+        <label for="cor">Cor do Veículo:</label>
+        <input type="text" id="cor" name="cor"><br>
+        <button type="button" onclick="registrarEntrada()">Registrar Entrada</button>
+    </form>
+
+    <h2>Registro de Saída</h2>
+    <form id="saidaForm">
+        <label for ="placaSaida">Placa do Veículo:</label>
+        <input type="text" id="placaSaida" name="placaSaida"><br>
+        <button type="button" onclick="registrarSaida()">Registrar Saída</button>
+        </form>
+        <h2>Informações do Veículo</h2>
+        <div id="output"></div>
+
+        <h2>Configurações</h2>
+        <label for="precoPorHora">Preço por Hora:</label>
+        <input type="number" id="precoPorHora" name="precoPorHora"><br>
+        <label for="precoPorDia">Preço por Dia:</label>
+        <input type="number" id="precoPorDia" name="precoPorDia"><br>
+        <label for="precoPeriodoEspecifico">Preço por Período Específico:</label>
+        <input type="number" id="precoPeriodoEspecifico" name="precoPeriodoEspecifico"><br>
+    </body>
+</html>
